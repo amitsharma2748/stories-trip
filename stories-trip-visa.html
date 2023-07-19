@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      id="st-google-fonts-css"
+      href="https://fonts.googleapis.com/css?family=DM+Sans:700italic,700,500italic,italic,regular,500&subset=latin-ext,latin"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+    <script type="text/javascript">
+      // Select all the images with the class "lazy"
+      const images = document.querySelectorAll(".lazy");
+
+      // Create a new IntersectionObserver
+      const observer = new IntersectionObserver((entries) => {
+        // Loop through the entries
+        entries.forEach((entry) => {
+          // If the entry is intersecting and the image has a data-src attribute
+          if (entry.isIntersecting && entry.target.getAttribute("data-src")) {
+            // Set the src attribute to the value of the data-src attribute
+            entry.target.src = entry.target.getAttribute("data-src");
+            // Remove the data-src attribute
+            entry.target.removeAttribute("data-src");
+            // Unobserve the image
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      // Loop through each image and observe it
+      images.forEach((image) => {
+        observer.observe(image);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="overlay-bg" class="overlay-bg"></div>
+    <header class="v-centr bg1 pr">
+      <!-- Header content, such as logo, navigation menu, etc. -->
+      <nav class="navbar v-centr flx1">
+        <!-- Menu Toggle -->
+        <div id="menu-toggle" class="menu-toggle dn cp">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+        <!-- Logo container -->
+        <div class="logo v-centr">
+          <a href="#"
+            ><img
+              class="lazy"
+              src="images/ht-logo01.png"
+              alt="tour logo"
+              class=""
+          /></a>
+        </div>
+        <!-- Navbar list -->
+        <ul id="main-menu" class="box-centr flx1">
+          <li class="nav-back cp dn">
+            <span class="material-symbols-outlined nav-back-icon">
+              chevron_left
+            </span>
+          </li>
+          <!-- Navbar list items -->
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Packages
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">India tour packages</li>
+                  <li><a href="#"> Kashmir</a></li>
+                  <li><a href="#"> Srinagar</a></li>
+                  <li><a href="#">Badrinath</a></li>
+                  <li><a href="#">Tirupati</a></li>
+                  <li><a href="#"> Rishikesh</a></li>
+                  <li><a href="#">Munnar</a></li>
+                  <li><a href="#"> South Goa</a></li>
+                  <li><a href="#"> Kanyakumari</a></li>
+                  <li><a href="#"> Sikkim</a></li>
+                  <li><a href="#">Haridwar</a></li>
+                  <li><a href="#">Banglore</a></li>
+                  <li><a href="#"> North Goa</a></li>
+                  <li><a href="#">Mussoorie</a></li>
+                  <li><a href="#"> Madurai</a></li>
+                  <li><a href="#"> Pahalgam</a></li>
+                  <li><a href="#">Gangotri</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">
+                    International tour packages
+                  </li>
+                  <li><a href="#"> Thailand</a></li>
+                  <li><a href="#"> United Arab Emirates</a></li>
+                  <li><a href="#">Sri Lanka</a></li>
+                  <li><a href="#">Singapur</a></li>
+                  <li><a href="#"> Malaysia</a></li>
+                  <li><a href="#">Nepal</a></li>
+                  <li><a href="#"> Israel</a></li>
+                  <li><a href="#"> Canada</a></li>
+                  <li><a href="#"> United Kingdom</a></li>
+                  <li><a href="#">Japan</a></li>
+                  <li><a href="#">Bangladesh</a></li>
+                  <li><a href="#"> Switzerland</a></li>
+                  <li><a href="#">China</a></li>
+                  <li><a href="#"> Mauritius</a></li>
+                  <li><a href="#"> Bhutan</a></li>
+                  <li><a href="#">Uzbekistan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Destinations
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">India</li>
+                  <li><a href="#"> Shimla</a></li>
+                  <li><a href="#"> Manali</a></li>
+                  <li><a href="#">Darjeeling</a></li>
+                  <li><a href="#">Munnar</a></li>
+                  <li><a href="#"> Goa</a></li>
+                  <li><a href="#">Ooty</a></li>
+                  <li><a href="#"> Kerala</a></li>
+                  <li><a href="#"> Kufri</a></li>
+                  <li><a href="#"> Thekkady</a></li>
+                  <li><a href="#">Kashmir</a></li>
+                  <li><a href="#">Delhi</a></li>
+                  <li><a href="#"> Haridwar</a></li>
+                  <li><a href="#">Ladakh</a></li>
+                  <li><a href="#"> Badrinath</a></li>
+                  <li><a href="#"> Banglore</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">International</li>
+                  <li><a href="#"> Singaoore</a></li>
+                  <li><a href="#"> Malaysia</a></li>
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Nepal</a></li>
+                  <li><a href="#"> Sri Lanka</a></li>
+                  <li><a href="#">Bhutan</a></li>
+                  <li><a href="#"> Maldives</a></li>
+                  <li><a href="#"> United Aarab Emirates</a></li>
+                  <li><a href="#"> Saudi Arabia</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">United States of America</a></li>
+                  <li><a href="#"> Jordan</a></li>
+                  <li><a href="#">Israel</a></li>
+                  <li><a href="#"> Canada</a></li>
+                  <li><a href="#"> United Kingdom</a></li>
+                  <li><a href="#">Japan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Trip Ideas
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 longname df fww">
+                  <li class="lead-list fw7 lh22">
+                    Trip ideas around the world
+                  </li>
+                  <li>
+                    <a href="./stories-trip-visa.html">
+                      59 visa Free Countries for Indians</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      20 Best Plases to visit near Delhi from 50km to 500km</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Places you can enjoy in economic budget in India</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >55 Best honeymoon places in India that every Romantic
+                      couple must visit</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"> Top 10 Strongest Air Forces of the World </a>
+                  </li>
+                  <li><a href="#">5 Romantic Hotels In Chennai </a></li>
+                  <li>
+                    <a href="#"
+                      >Indian Trains and SL, 1A, 2A, 3A, 2S, CC........Do you
+                      know what does it mean?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >10 Countries with the Most Beautiful Women in the World
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Best transgender friendly travel experiences around the
+                      Europe
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Thailand bay made popular by 'The Beach' to remain closed
+                      for two more years
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Uber introduces new safety alerts in the app</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Top 10 Places you Cannot Afford to Miss Out in China
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Top 10 Islands with the Best Scenic Beauty that One Must
+                      Visit in Finland
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Cities in US where you can drink on streets </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >How the simple tequila coke made this Mexican bar one of
+                      the best in the world
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >10 Historic places that have been ruined and rebuilt
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Signtseeing
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">Thingsto do in India</li>
+                  <li><a href="#"> Shimla</a></li>
+                  <li><a href="#">Manali</a></li>
+                  <li><a href="#"> Munnar</a></li>
+                  <li><a href="#">Ooty</a></li>
+                  <li><a href="#"> Kufri</a></li>
+                  <li><a href="#"> Kasmir</a></li>
+                  <li><a href="#">Gangtok</a></li>
+                  <li><a href="#"> Himachal Pradesh</a></li>
+                  <li><a href="#">Delhi</a></li>
+                  <li><a href="#"> Haridwar</a></li>
+                  <li><a href="#"> Banglore</a></li>
+                  <li><a href="#"> Darjeeling</a></li>
+                  <li><a href="#">Goa</a></li>
+                  <li><a href="#">Kerala</a></li>
+                  <li><a href="#"> Thekkady</a></li>
+                  <li><a href="#">Sikkim</a></li>
+                  <li><a href="#"> Srinagar</a></li>
+                  <li><a href="#"> Kedarnath</a></li>
+                  <li><a href="#"> Ladakh</a></li>
+                  <li><a href="#">Badrinath</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">Thingsto do in India</li>
+                  <li><a href="#"> Chennai</a></li>
+                  <li><a href="#"> Kolkata</a></li>
+                  <li><a href="#">Pune</a></li>
+                  <li><a href="#">Baroda</a></li>
+                  <li><a href="#"> Assam</a></li>
+                  <li><a href="#">Bagdogra</a></li>
+                  <li><a href="#"> Agra</a></li>
+                  <li><a href="#"> Aligarh</a></li>
+                  <li><a href="#"> Alwar</a></li>
+                  <li><a href="#">Amrawati</a></li>
+                  <li><a href="#">Anand</a></li>
+                  <li><a href="#"> Hyderabad</a></li>
+                  <li><a href="#">Mumbai</a></li>
+                  <li><a href="#"> Ahemdabad</a></li>
+                  <li><a href="#"> Asansol</a></li>
+                  <li><a href="#">Aurangabad</a></li>
+                  <li><a href="#"> Bareilly Pradesh</a></li>
+                  <li><a href="#">Ajmer</a></li>
+                  <li><a href="#"> Allahbad</a></li>
+                  <li><a href="#"> Amritsar</a></li>
+                  <li><a href="#"> Ambala</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Currency, Cart, User container -->
+      <div class="right-nav v-centr">
+        <div class="search-container">
+          <div
+            class="cart w44 h44 br50 box-centr brd1 ml20 cp"
+            id="searchButton"
+          >
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+        <!-- Login container -->
+        <div
+          class="login w44 h44 br50 box-centr brd1 ml20 cp"
+          id="login-button"
+        >
+          <span class="material-symbols-outlined"> person </span>
+        </div>
+      </div>
+      <ul class="cart-menu">
+        <li class="heading">
+          <div class="cart-heading-section">Your Cart</div>
+        </li>
+        <li>
+          <div class="cart-text-empty">Your cart is empty</div>
+        </li>
+      </ul>
+      <div
+        class="plan-trip box-centr ttu fs14 pl20 pr20 ml20 bg7"
+        id="enquiry-button"
+      >
+        Plan A Trip
+      </div>
+    </header>
+
+    <main>
+      <section class="pt32 pb32 centr-hdr bt1 bb1">
+        <div class="container">
+          <div class="breadcrumb">
+            <ul class="df fs16 fw5">
+              <li class="fc6">Home</li>
+              <li class="fc6">Stories</li>
+              <li>59 Visa Free Countries for Indians</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pt32 pb32 bt1 bb1">
+        <div class="container">
+          <div class="detail-content df pr ais">
+            <div class="left-box flx1">
+              <div class="detail-service">
+                <section class="pt40 pb40">
+                  <div class="inner-h1">
+                    <h1>
+                      59 Visa Free Countries for Indians
+                      <span class="material-symbols-outlined"> share </span>
+                    </h1>
+                  </div>
+                </section>
+                <div class="v-centr mb40 bt1">
+                  <div
+                    class="asl-question fs14 fw5 bg7 pl20 pr20 br1 fc3 ttu box-centr w100 mr20 h48 cp"
+                  >
+                    enquire now
+                  </div>
+                  <div
+                    class="asl-question fs14 fw5 bg7 pl20 pr20 br1 fc3 ttu box-centr w100 mr20 h48 cp"
+                  >
+                    contact agent
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-box flx33 pl15 ps t72">
+              <div class="owner-info bg1 p20 brd1 br10 mb30 bs1">
+                <div class="df aic jcsb pt20 pb20">
+                  <span class="fs20"> Follow Us On : </span>
+                  <!-- Navbar list -->
+                  <ul class="social-media v-centr">
+                    <!-- Navbar list items -->
+                    <li>
+                      <a class="df" href="#" target="_blank">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                        >
+                          <rect
+                            width="40"
+                            height="40"
+                            rx="20"
+                            fill="#3D52A6"
+                          ></rect>
+                          <path
+                            d="M21.0417 17.3959V15.3126C21.0417 14.7376 21.5084 14.2709 22.0834 14.2709H23.125V11.6667H21.0417C19.3157 11.6667 17.9167 13.0657 17.9167 14.7917V17.3959H15.8334V20.0001H17.9167V28.3334H21.0417V20.0001H23.125L24.1667 17.3959H21.0417Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="df" href="#" target="_blank">
+                        <span class="elementor-screen-only"></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                        >
+                          <rect
+                            width="40"
+                            height="40"
+                            rx="20"
+                            fill="#58B1F7"
+                          ></rect>
+                          <path
+                            d="M28.5878 14.6732C27.9489 14.9534 27.2682 15.1392 26.5585 15.2294C27.2886 14.7935 27.8459 14.1084 28.1079 13.2827C27.4271 13.6886 26.6755 13.9753 25.8745 14.1353C25.2281 13.447 24.3069 13.0208 23.3019 13.0208C21.352 13.0208 19.7823 14.6034 19.7823 16.5436C19.7823 16.8228 19.8059 17.0912 19.8639 17.3468C16.9358 17.204 14.3449 15.8006 12.6044 13.6628C12.3006 14.19 12.1223 14.7935 12.1223 15.4431C12.1223 16.6628 12.7505 17.744 13.6868 18.37C13.1209 18.3593 12.5658 18.195 12.0955 17.9362C12.0955 17.947 12.0955 17.9609 12.0955 17.9749C12.0955 19.6864 13.3163 21.108 14.9172 21.4355C14.6306 21.5139 14.3181 21.5514 13.9938 21.5514C13.7684 21.5514 13.5407 21.5386 13.3271 21.4913C13.7834 22.8861 15.0783 23.9115 16.618 23.9448C15.4197 24.8821 13.8983 25.4469 12.2512 25.4469C11.9624 25.4469 11.6853 25.434 11.4083 25.3986C12.9684 26.4046 14.8174 26.9791 16.8113 26.9791C23.2922 26.9791 26.8355 21.6105 26.8355 16.957C26.8355 16.8013 26.8301 16.651 26.8226 16.5017C27.5216 16.0057 28.1089 15.3862 28.5878 14.6732Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="df" href="#" target="_blank">
+                        <span class="elementor-screen-only"></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                        >
+                          <rect
+                            width="40"
+                            height="40"
+                            rx="20"
+                            fill="#D9498C"
+                          ></rect>
+                          <path
+                            d="M23.125 11.6667H16.875C13.9989 11.6667 11.6666 13.999 11.6666 16.8751V23.1251C11.6666 26.0011 13.9989 28.3334 16.875 28.3334H23.125C26.001 28.3334 28.3333 26.0011 28.3333 23.1251V16.8751C28.3333 13.999 26.001 11.6667 23.125 11.6667ZM26.7708 23.1251C26.7708 25.1355 25.1354 26.7709 23.125 26.7709H16.875C14.8645 26.7709 13.2291 25.1355 13.2291 23.1251V16.8751C13.2291 14.8647 14.8645 13.2292 16.875 13.2292H23.125C25.1354 13.2292 26.7708 14.8647 26.7708 16.8751V23.1251Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            d="M20 15.8334C17.6989 15.8334 15.8333 17.699 15.8333 20.0001C15.8333 22.3011 17.6989 24.1667 20 24.1667C22.301 24.1667 24.1666 22.3011 24.1666 20.0001C24.1666 17.699 22.301 15.8334 20 15.8334ZM20 22.6042C18.5645 22.6042 17.3958 21.4355 17.3958 20.0001C17.3958 18.5636 18.5645 17.3959 20 17.3959C21.4354 17.3959 22.6041 18.5636 22.6041 20.0001C22.6041 21.4355 21.4354 22.6042 20 22.6042Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            d="M24.4792 16.0761C24.7858 16.0761 25.0344 15.8275 25.0344 15.5209C25.0344 15.2143 24.7858 14.9657 24.4792 14.9657C24.1725 14.9657 23.924 15.2143 23.924 15.5209C23.924 15.8275 24.1725 16.0761 24.4792 16.0761Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="df" href="#" target="_blank">
+                        <span class="elementor-screen-only"></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                        >
+                          <rect
+                            width="40"
+                            height="40"
+                            rx="20"
+                            fill="#F62D3A"
+                          ></rect>
+                          <path
+                            d="M28.3875 14.9545C27.8902 14.0773 27.3506 13.9159 26.2517 13.8545C25.154 13.7807 22.3937 13.75 20.0023 13.75C17.6064 13.75 14.8449 13.7807 13.7484 13.8534C12.6518 13.9159 12.111 14.0761 11.6091 14.9545C11.0969 15.8307 10.8334 17.3398 10.8334 19.9966C10.8334 19.9989 10.8334 20 10.8334 20C10.8334 20.0023 10.8334 20.0034 10.8334 20.0034V20.0057C10.8334 22.6511 11.0969 24.1716 11.6091 25.0386C12.111 25.9159 12.6507 26.075 13.7472 26.1489C14.8449 26.2125 17.6064 26.25 20.0023 26.25C22.3937 26.25 25.154 26.2125 26.2529 26.15C27.3517 26.0761 27.8914 25.917 28.3887 25.0398C28.9055 24.1727 29.1667 22.6523 29.1667 20.0068C29.1667 20.0068 29.1667 20.0034 29.1667 20.0011V19.9977C29.1667 17.3398 28.9055 15.8307 28.3875 14.9545ZM17.7084 23.4091V16.5909L23.4375 20L17.7084 23.4091Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div
+                    class="asl-question fs14 fw5 bg4 pl20 pr20 pt20 pb20 br10 fc3 ttu box-centr w100"
+                  >
+                    enquire now
+                  </div>
+                  <div class="taj-mahal v-centr fdc mt20">
+                    <div class="fs26 pt20 pb20 fw7 w100">
+                      <h3>Recommended For You</h3>
+                    </div>
+                    <div class="w100">
+                      <img
+                        class="w100"
+                        src="images/tajmahal.jpg"
+                        alt="modtour package"
+                      />
+                    </div>
+                    <div class="fs18 pt20 pb20 fw7">
+                      <h3>Top 6 Destinations in India for the History Buffs</h3>
+                    </div>
+                    <div class="bb1">
+                      <ul>
+                        <li >
+                          <div class="p10 ">
+                            <a
+                              class="df"
+                              href="https://www.hellotravel.com/stories/top-8-national-parks-for-best-wildlife-experience"
+                              onclick="ga('send', 'event', 'Stories', 'stories','you-may-like');"
+                              target="_blank"
+                            >
+                              <img
+                                alt="Top 8 National Parks For Best Wildlife Experience"
+                                src="https://www.hlimg.com/images/stories/216X180/main_1675427646-9263e.jpg?w=360&dpr=1.0"
+                                loading="lazy"
+                                style="
+                                  float: left;
+                                  width: 20%;
+                                  border-radius: 2px;
+                                "
+                              />
+                              <div
+                                class="c3 f14 b fl w80 pl15 eosl df fc1 aic lh22 fw7 fs16"
+                              >
+                                The Best Places To Witness Snowfall In February
+                                In India
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li >
+                            <div class="p10">
+                              <a
+                                class="df"
+                                href="https://www.hellotravel.com/stories/10-perfect-winter-vacation-destinations-in-maharashtra"
+                                onclick="ga('send', 'event', 'Stories', 'stories','you-may-like');"
+                                target="_blank"
+                              >
+                                <img
+                                alt="10 Perfect Winter Vacation Destinations in Maharashtra"
+                                  src="https://www.hlimg.com/images/stories/216X180/main_1675151331-9524e.jpg?w=360&dpr=1.0"
+                                  loading="lazy"
+                                  style="
+                                    float: left;
+                                    width: 20%;
+                                    border-radius: 2px;
+                                  "
+                                />
+                                <div
+                                  class="c3 f14 b fl w80 pl15 eosl df fc1 aic lh22 fw7 fs16"
+                                >
+                                10 Perfect Winter Vacation Destinations in Maharashtra
+                                </div>
+                              </a>
+                            </div>
+                          </li>
+                          <li >
+                            <div class="p10">
+                              <a
+                                class="df"
+                                href="https://www.hellotravel.com/stories/top-strange-temples-in-india-everyone-should-visit"
+                                onclick="ga('send', 'event', 'Stories', 'stories','you-may-like');"
+                                target="_blank"
+                              >
+                                <img
+                                alt="Top Strange Temples In India Everyone Should Visit"
+                                  src="https://www.hlimg.com/images/stories/216X180/bharat-mata-temple-1448972078u30_1674816457-6125e.jpg?w=360&dpr=1.0"
+                                  loading="lazy"
+                                  style="
+                                    float: left;
+                                    width: 20%;
+                                    border-radius: 2px;
+                                  "
+                                />
+                                <div
+                                  class="c3 f14 b fl w80 pl15 eosl df fc1 aic lh22 fw7 fs16"
+                                >
+                                Top Strange Temples In India Everyone Should Visit
+                                </div>
+                              </a>
+                            </div>
+                          </li>
+                          <li >
+                            <div class="p10">
+                              <a
+                                class="df"
+                                href="https://www.hellotravel.com/stories/most-thrilling-locations-to-try-out-adventurous-activities-in-india"
+                                onclick="ga('send', 'event', 'Stories', 'stories','you-may-like');"
+                                target="_blank"
+                              >
+                                <img
+                                alt="Most Thrilling Locations to Try Out Adventurous Activities in India!"
+                                  src="https://www.hlimg.com/images/stories/216X180/main-images_1674123065-6980e.png?w=360&dpr=1.0"
+                                  loading="lazy"
+                                  style="
+                                    float: left;
+                                    width: 20%;
+                                    border-radius: 2px;
+                                  "
+                                />
+                                <div
+                                  class="c3 f14 b fl w80 pl15 eosl df fc1 aic lh22 fw7 fs16"
+                                >
+                                Most Thrilling Locations to Try Out Adventurous Activities in India!
+                                </div>
+                              </a>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="p20 bgf6 mt2 w100 bg5 mt20">
+                        <div class="p-10">
+                            <h3 class="fc1 fs18">Estimate Your Trip Cost</h3>
+                        </div>
+                        <div>
+                            <input type="text" class="brd2 bs1 w100 br6"/>
+                        </div>
+                    </div>
+                    <h4 class="owener-heading fw5 fs16 lh26 fc1 mt10">
+                      modtour
+                    </h4>
+                    <p class="owner-member-since fw4 fs16 lh26 tac mt6 pb10">
+                      Member Since 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt40 pb40 bt1">
+        <div class="footer-counts df jcse aic">
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">15,000+</h2>
+            <span class="fs14">TRAVEL AGENTS</span>
+          </div>
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">2,000,000+</h2>
+            <span class="fs14">AMAZING DEALS</span>
+          </div>
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">50 Lacs+</h2>
+            <span class="fs14">HAPPY TRAVELERS</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bt1">
+      <!-- Footer content, such as copyright information, contact details, etc. -->
+      <div class="container">
+        <div class="footer-navbar w100 df jcsb fww pb40">
+          <div class="footer-navlist flx1">
+            <h3>About Hello Travel</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Help us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>For Travelers</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Add a review</a></li>
+              <li><a href="#">Plan your trip</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Trip Ideas Policy</a></li>
+              <li><a href="#">Weekend Gateways</a></li>
+              <li><a href="#">Events around the world</a></li>
+              <li><a href="#">Travel Calculator</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>For Travel Agents</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Agents login</a></li>
+              <li><a href="#">Register with us</a></li>
+              <li><a href="#">Learning Center</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>Trusted Partner</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Safe and Secure</a></li>
+              <li><a href="#">Trusted and Reliable</a></li>
+              <li><a href="#">Quick Payment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="trvl-link bg6 pb40">
+      <div class="container bt1">
+        <div class="footer-trvl-links mt40">
+          <a class="fs16 fw6" href="#">Travel Packages:</a>
+          <a href="#">» Kashmir Packages&nbsp;</a>
+          <a href="#">» Manali Packages&nbsp;</a>
+          <a href="#">» Sikkim Packages&nbsp;</a>
+          <a href="#">» Gangtok Packages&nbsp;</a>
+          <a href="#">» Shimla Packages&nbsp;</a>
+          <a href="#">» Srinagar Packages&nbsp;</a>
+          <a href="#">» Ooty Packages&nbsp;</a>
+          <a href="#">» Darjeeling Packages&nbsp;</a>
+          <a href="#">» Ladakh Packages&nbsp;</a>
+          <a href="#">» Kodaikanal Packages&nbsp;</a>
+          <a href="#">» Mumbai Packages&nbsp;</a>
+          <a href="#">» Mussoorie Packages&nbsp;</a>
+          <a href="#">» Kanyakumari Packages&nbsp;</a>
+          <a href="#">» Pahalgam Packages&nbsp;</a>
+          <a href="#">» Gangotri Packages&nbsp;</a>
+          <a href="#">» South Goa Packages&nbsp;</a>
+        </div>
+        <div class="footer-trvl-links mt20">
+          <a class="f16 fw6" href="#">Latest destinations:</a>
+          <a href="#">» Kedarnath &nbsp;</a>
+          <a href="#">» Srinagar &nbsp;</a>
+          <a href="#">» Ooty &nbsp;</a>
+          <a href="#">» Chardham &nbsp;</a>
+          <a href="#">» Haridwar &nbsp;</a>
+          <a href="#">» Himachal Pradesh &nbsp;</a>
+          <a href="#">» Ladakh &nbsp;</a>
+          <a href="#">» Delhi &nbsp;</a>
+          <a href="#">» Kodaikanal &nbsp;</a>
+          <a href="#">» Darjeeling &nbsp;</a>
+          <a href="#">» Gangtok &nbsp;</a>
+          <a href="#">» Tirupati &nbsp;</a>
+          <a href="#">» Bangalore &nbsp;</a>
+          <a href="#">» Badrinath &nbsp;</a>
+          <a href="#">» Sikkim &nbsp;</a>
+          <a href="#">» Manali &nbsp;</a>
+          <a href="#">» Shimla &nbsp;</a>
+          <a href="#">» Mumbai &nbsp;</a>
+          <a href="#">» Gulmarg &nbsp;</a>
+          <a href="#">» Goa &nbsp;</a>
+        </div>
+
+        <div class="footer-trvl-links mt20 flx1">
+          <a class="f14 fw6" href="#">Latest activities:</a>
+          <a href="#">» Trek to Kemmangundi Peak &nbsp;</a>
+          <a href="#">» Gayatri Mandir &nbsp;</a>
+          <a href="#">» Padmanabhaswamy temple &nbsp;</a>
+          <a href="#">» Karanji lake &nbsp;</a>
+          <a href="#">» Gorakhnath Temple &nbsp;</a>
+          <a href="#">» Ramappa Temple &nbsp;</a>
+          <a href="#">» Thirukkadaiyur &nbsp;</a>
+          <a href="#">» Akshardham Temple &nbsp;</a>
+          <a href="#">» Kumaraswamy Temple &nbsp;</a>
+          <a href="#">» taraporewala aquarium &nbsp;</a>
+          <a href="#">» Hirakud Dam &nbsp;</a>
+          <a href="#">» Shree Govindajee Temple &nbsp;</a>
+          <a href="#">» Varkala Lighthouse &nbsp;</a>
+          <a href="#">» Meghdoot Garden &nbsp;</a>
+          <a href="#">» Menmecho Lake &nbsp;</a>
+          <a href="#">» Somnath Mahadev ji Temple &nbsp;</a>
+          <a href="#">» Kalesar National Park &nbsp;</a>
+          <a href="#">» Hoka Trees &nbsp;</a>
+          <a href="#"
+            >» Kaziranga National Park- Your Adventurous Journey Begins
+            &nbsp;</a
+          >
+          <a href="#">» Reis Magos Fort &nbsp;</a>
+          <a href="#">» Abirami Amman Temple &nbsp;</a>
+          <a href="#">» Ride on the Mumbai Local Train &nbsp;</a>
+          <a href="#">» Binsar Mahadev Temple &nbsp;</a>
+          <a href="#">» Samayapuram Mariamman Temple &nbsp;</a>
+          <a href="#">» Chandrabadani temple &nbsp;</a>
+          <a href="#">» Lakulisha &nbsp;</a>
+          <a href="#">» Balaji Temple &nbsp;</a>
+          <a href="#">» Powai Lake &nbsp;</a>
+          <a href="#">» Wet n Joy Waterpark &nbsp;</a>
+          <a href="#">» DEEPOR BEEL &nbsp;</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg5">
+      <div class="container">
+        <div class="copyright-box df aic jcsb pt20 pb20">
+          <span class="copy"> © Copyright Traveler 2022 </span>
+          <!-- Navbar list -->
+          <ul class="social-media v-centr">
+            <!-- Navbar list items -->
+            <li>
+              <a class="df" href="#" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#3D52A6"></rect>
+                  <path
+                    d="M21.0417 17.3959V15.3126C21.0417 14.7376 21.5084 14.2709 22.0834 14.2709H23.125V11.6667H21.0417C19.3157 11.6667 17.9167 13.0657 17.9167 14.7917V17.3959H15.8334V20.0001H17.9167V28.3334H21.0417V20.0001H23.125L24.1667 17.3959H21.0417Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#58B1F7"></rect>
+                  <path
+                    d="M28.5878 14.6732C27.9489 14.9534 27.2682 15.1392 26.5585 15.2294C27.2886 14.7935 27.8459 14.1084 28.1079 13.2827C27.4271 13.6886 26.6755 13.9753 25.8745 14.1353C25.2281 13.447 24.3069 13.0208 23.3019 13.0208C21.352 13.0208 19.7823 14.6034 19.7823 16.5436C19.7823 16.8228 19.8059 17.0912 19.8639 17.3468C16.9358 17.204 14.3449 15.8006 12.6044 13.6628C12.3006 14.19 12.1223 14.7935 12.1223 15.4431C12.1223 16.6628 12.7505 17.744 13.6868 18.37C13.1209 18.3593 12.5658 18.195 12.0955 17.9362C12.0955 17.947 12.0955 17.9609 12.0955 17.9749C12.0955 19.6864 13.3163 21.108 14.9172 21.4355C14.6306 21.5139 14.3181 21.5514 13.9938 21.5514C13.7684 21.5514 13.5407 21.5386 13.3271 21.4913C13.7834 22.8861 15.0783 23.9115 16.618 23.9448C15.4197 24.8821 13.8983 25.4469 12.2512 25.4469C11.9624 25.4469 11.6853 25.434 11.4083 25.3986C12.9684 26.4046 14.8174 26.9791 16.8113 26.9791C23.2922 26.9791 26.8355 21.6105 26.8355 16.957C26.8355 16.8013 26.8301 16.651 26.8226 16.5017C27.5216 16.0057 28.1089 15.3862 28.5878 14.6732Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#D9498C"></rect>
+                  <path
+                    d="M23.125 11.6667H16.875C13.9989 11.6667 11.6666 13.999 11.6666 16.8751V23.1251C11.6666 26.0011 13.9989 28.3334 16.875 28.3334H23.125C26.001 28.3334 28.3333 26.0011 28.3333 23.1251V16.8751C28.3333 13.999 26.001 11.6667 23.125 11.6667ZM26.7708 23.1251C26.7708 25.1355 25.1354 26.7709 23.125 26.7709H16.875C14.8645 26.7709 13.2291 25.1355 13.2291 23.1251V16.8751C13.2291 14.8647 14.8645 13.2292 16.875 13.2292H23.125C25.1354 13.2292 26.7708 14.8647 26.7708 16.8751V23.1251Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M20 15.8334C17.6989 15.8334 15.8333 17.699 15.8333 20.0001C15.8333 22.3011 17.6989 24.1667 20 24.1667C22.301 24.1667 24.1666 22.3011 24.1666 20.0001C24.1666 17.699 22.301 15.8334 20 15.8334ZM20 22.6042C18.5645 22.6042 17.3958 21.4355 17.3958 20.0001C17.3958 18.5636 18.5645 17.3959 20 17.3959C21.4354 17.3959 22.6041 18.5636 22.6041 20.0001C22.6041 21.4355 21.4354 22.6042 20 22.6042Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M24.4792 16.0761C24.7858 16.0761 25.0344 15.8275 25.0344 15.5209C25.0344 15.2143 24.7858 14.9657 24.4792 14.9657C24.1725 14.9657 23.924 15.2143 23.924 15.5209C23.924 15.8275 24.1725 16.0761 24.4792 16.0761Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#F62D3A"></rect>
+                  <path
+                    d="M28.3875 14.9545C27.8902 14.0773 27.3506 13.9159 26.2517 13.8545C25.154 13.7807 22.3937 13.75 20.0023 13.75C17.6064 13.75 14.8449 13.7807 13.7484 13.8534C12.6518 13.9159 12.111 14.0761 11.6091 14.9545C11.0969 15.8307 10.8334 17.3398 10.8334 19.9966C10.8334 19.9989 10.8334 20 10.8334 20C10.8334 20.0023 10.8334 20.0034 10.8334 20.0034V20.0057C10.8334 22.6511 11.0969 24.1716 11.6091 25.0386C12.111 25.9159 12.6507 26.075 13.7472 26.1489C14.8449 26.2125 17.6064 26.25 20.0023 26.25C22.3937 26.25 25.154 26.2125 26.2529 26.15C27.3517 26.0761 27.8914 25.917 28.3887 25.0398C28.9055 24.1727 29.1667 22.6523 29.1667 20.0068C29.1667 20.0068 29.1667 20.0034 29.1667 20.0011V19.9977C29.1667 17.3398 28.9055 15.8307 28.3875 14.9545ZM17.7084 23.4091V16.5909L23.4375 20L17.7084 23.4091Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

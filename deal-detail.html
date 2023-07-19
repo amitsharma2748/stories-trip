@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      id="st-google-fonts-css"
+      href="https://fonts.googleapis.com/css?family=DM+Sans:700italic,700,500italic,italic,regular,500&subset=latin-ext,latin"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+    <script type="text/javascript">
+      // Select all the images with the class "lazy"
+      const images = document.querySelectorAll(".lazy");
+
+      // Create a new IntersectionObserver
+      const observer = new IntersectionObserver((entries) => {
+        // Loop through the entries
+        entries.forEach((entry) => {
+          // If the entry is intersecting and the image has a data-src attribute
+          if (entry.isIntersecting && entry.target.getAttribute("data-src")) {
+            // Set the src attribute to the value of the data-src attribute
+            entry.target.src = entry.target.getAttribute("data-src");
+            // Remove the data-src attribute
+            entry.target.removeAttribute("data-src");
+            // Unobserve the image
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      // Loop through each image and observe it
+      images.forEach((image) => {
+        observer.observe(image);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Content of the web page goes here -->
+    <div id="overlay-bg" class="overlay-bg"></div>
+    <header class="v-centr bg1 pr">
+      <!-- Header content, such as logo, navigation menu, etc. -->
+      <nav class="navbar v-centr flx1">
+        <!-- Menu Toggle -->
+        <div id="menu-toggle" class="menu-toggle dn cp">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+        <!-- Logo container -->
+        <div class="logo v-centr">
+          <a href="#"
+            ><img
+              class="lazy"
+              src="images/ht-logo01.png"
+              alt="tour logo"
+              class=""
+          /></a>
+        </div>
+        <!-- Navbar list -->
+        <ul id="main-menu" class="box-centr flx1">
+          <li class="nav-back cp dn">
+            <span class="material-symbols-outlined nav-back-icon">
+              chevron_left
+            </span>
+          </li>
+          <!-- Navbar list items -->
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Packages
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">India tour packages</li>
+                  <li><a href="#"> Kashmir</a></li>
+                  <li><a href="#"> Srinagar</a></li>
+                  <li><a href="#">Badrinath</a></li>
+                  <li><a href="#">Tirupati</a></li>
+                  <li><a href="#"> Rishikesh</a></li>
+                  <li><a href="#">Munnar</a></li>
+                  <li><a href="#"> South Goa</a></li>
+                  <li><a href="#"> Kanyakumari</a></li>
+                  <li><a href="#"> Sikkim</a></li>
+                  <li><a href="#">Haridwar</a></li>
+                  <li><a href="#">Banglore</a></li>
+                  <li><a href="#"> North Goa</a></li>
+                  <li><a href="#">Mussoorie</a></li>
+                  <li><a href="#"> Madurai</a></li>
+                  <li><a href="#"> Pahalgam</a></li>
+                  <li><a href="#">Gangotri</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">
+                    International tour packages
+                  </li>
+                  <li><a href="#"> Thailand</a></li>
+                  <li><a href="#"> United Arab Emirates</a></li>
+                  <li><a href="#">Sri Lanka</a></li>
+                  <li><a href="#">Singapur</a></li>
+                  <li><a href="#"> Malaysia</a></li>
+                  <li><a href="#">Nepal</a></li>
+                  <li><a href="#"> Israel</a></li>
+                  <li><a href="#"> Canada</a></li>
+                  <li><a href="#"> United Kingdom</a></li>
+                  <li><a href="#">Japan</a></li>
+                  <li><a href="#">Bangladesh</a></li>
+                  <li><a href="#"> Switzerland</a></li>
+                  <li><a href="#">China</a></li>
+                  <li><a href="#"> Mauritius</a></li>
+                  <li><a href="#"> Bhutan</a></li>
+                  <li><a href="#">Uzbekistan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Destinations
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">India</li>
+                  <li><a href="#"> Shimla</a></li>
+                  <li><a href="#"> Manali</a></li>
+                  <li><a href="#">Darjeeling</a></li>
+                  <li><a href="#">Munnar</a></li>
+                  <li><a href="#"> Goa</a></li>
+                  <li><a href="#">Ooty</a></li>
+                  <li><a href="#"> Kerala</a></li>
+                  <li><a href="#"> Kufri</a></li>
+                  <li><a href="#"> Thekkady</a></li>
+                  <li><a href="#">Kashmir</a></li>
+                  <li><a href="#">Delhi</a></li>
+                  <li><a href="#"> Haridwar</a></li>
+                  <li><a href="#">Ladakh</a></li>
+                  <li><a href="#"> Badrinath</a></li>
+                  <li><a href="#"> Banglore</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">International</li>
+                  <li><a href="#"> Singaoore</a></li>
+                  <li><a href="#"> Malaysia</a></li>
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Nepal</a></li>
+                  <li><a href="#"> Sri Lanka</a></li>
+                  <li><a href="#">Bhutan</a></li>
+                  <li><a href="#"> Maldives</a></li>
+                  <li><a href="#"> United Aarab Emirates</a></li>
+                  <li><a href="#"> Saudi Arabia</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">United States of America</a></li>
+                  <li><a href="#"> Jordan</a></li>
+                  <li><a href="#">Israel</a></li>
+                  <li><a href="#"> Canada</a></li>
+                  <li><a href="#"> United Kingdom</a></li>
+                  <li><a href="#">Japan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Trip Ideas
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 longname df fww">
+                  <li class="lead-list fw7 lh22">
+                    Trip ideas around the world
+                  </li>
+                  <li><a href="#"> 59 visa Free Countries for Indians</a></li>
+                  <li>
+                    <a href="#">
+                      20 Best Plases to visit near Delhi from 50km to 500km</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Places you can enjoy in economic budget in India</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      >55 Best honeymoon places in India that every Romantic
+                      couple must visit</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"> Top 10 Strongest Air Forces of the World </a>
+                  </li>
+                  <li><a href="#">5 Romantic Hotels In Chennai </a></li>
+                  <li>
+                    <a href="#"
+                      >Indian Trains and SL, 1A, 2A, 3A, 2S, CC........Do you
+                      know what does it mean?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >10 Countries with the Most Beautiful Women in the World
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Best transgender friendly travel experiences around the
+                      Europe
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Thailand bay made popular by 'The Beach' to remain closed
+                      for two more years
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Uber introduces new safety alerts in the app</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Top 10 Places you Cannot Afford to Miss Out in China
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Top 10 Islands with the Best Scenic Beauty that One Must
+                      Visit in Finland
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Cities in US where you can drink on streets </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >How the simple tequila coke made this Mexican bar one of
+                      the best in the world
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >10 Historic places that have been ruined and rebuilt
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-level2">
+            <a href="#" class="v-centr">
+              Signtseeing
+              <span class="material-symbols-outlined expand-list mt2">
+                expand_more
+              </span>
+            </a>
+            <ul class="nav-level2 brd1 pa bg1 br10 pt10 pb10">
+              <li class="df ais">
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">Thingsto do in India</li>
+                  <li><a href="#"> Shimla</a></li>
+                  <li><a href="#">Manali</a></li>
+                  <li><a href="#"> Munnar</a></li>
+                  <li><a href="#">Ooty</a></li>
+                  <li><a href="#"> Kufri</a></li>
+                  <li><a href="#"> Kasmir</a></li>
+                  <li><a href="#">Gangtok</a></li>
+                  <li><a href="#"> Himachal Pradesh</a></li>
+                  <li><a href="#">Delhi</a></li>
+                  <li><a href="#"> Haridwar</a></li>
+                  <li><a href="#"> Banglore</a></li>
+                  <li><a href="#"> Darjeeling</a></li>
+                  <li><a href="#">Goa</a></li>
+                  <li><a href="#">Kerala</a></li>
+                  <li><a href="#"> Thekkady</a></li>
+                  <li><a href="#">Sikkim</a></li>
+                  <li><a href="#"> Srinagar</a></li>
+                  <li><a href="#"> Kedarnath</a></li>
+                  <li><a href="#"> Ladakh</a></li>
+                  <li><a href="#">Badrinath</a></li>
+                </ul>
+                <ul class="nav-level3 df fww">
+                  <li class="lead-list fw7 lh22">Thingsto do in India</li>
+                  <li><a href="#"> Chennai</a></li>
+                  <li><a href="#"> Kolkata</a></li>
+                  <li><a href="#">Pune</a></li>
+                  <li><a href="#">Baroda</a></li>
+                  <li><a href="#"> Assam</a></li>
+                  <li><a href="#">Bagdogra</a></li>
+                  <li><a href="#"> Agra</a></li>
+                  <li><a href="#"> Aligarh</a></li>
+                  <li><a href="#"> Alwar</a></li>
+                  <li><a href="#">Amrawati</a></li>
+                  <li><a href="#">Anand</a></li>
+                  <li><a href="#"> Hyderabad</a></li>
+                  <li><a href="#">Mumbai</a></li>
+                  <li><a href="#"> Ahemdabad</a></li>
+                  <li><a href="#"> Asansol</a></li>
+                  <li><a href="#">Aurangabad</a></li>
+                  <li><a href="#"> Bareilly Pradesh</a></li>
+                  <li><a href="#">Ajmer</a></li>
+                  <li><a href="#"> Allahbad</a></li>
+                  <li><a href="#"> Amritsar</a></li>
+                  <li><a href="#"> Ambala</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Currency, Cart, User container -->
+      <div class="right-nav v-centr">
+        <div class="search-container">
+          <div class="input-search">
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="cart w44 h44 br50 box-centr brd1 ml20 cp">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+        <!-- Login container -->
+        <div
+          class="login w44 h44 br50 box-centr brd1 ml20 cp"
+          id="login-button"
+        >
+          <span class="material-symbols-outlined"> person </span>
+        </div>
+      </div>
+      <ul class="cart-menu">
+        <li class="heading">
+          <div class="cart-heading-section">Your Cart</div>
+        </li>
+        <li>
+          <div class="cart-text-empty">Your cart is empty</div>
+        </li>
+      </ul>
+      <div class="plan-trip box-centr ttu fs14 pl20 pr20 ml20 bg7">
+        Plan A Trip
+      </div>
+    </header>
+    <div class="fixed-navbar bg1 pf dn t0 l0 zi99 bb1" id="fixed-navbar">
+      <nav class="nav-conatiner df pb20 pt20">
+        <ul class="df">
+          <li class="mr16"><a href="#itinerary" class="fc1">Itinerary</a></li>
+          <li class="mr16 ml20">
+            <a href="#inexclude" class="fc1">Inclusions</a>
+          </li>
+          <li class="mr16 ml20">
+            <a href="#accommodation" class="fc1">Accommodation</a>
+          </li>
+          <li class="mr16 ml20"><a href="#tc" class="fc1">T&amp;C</a></li>
+          <li class="mr16 ml20">
+            <a href="#agent-details" class="fc1">Agent Details</a>
+          </li>
+          <li class="mr16 ml20">
+            <a href="#customize-package" class="fc1">Customize your Package</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="inside-page">
+      <section class="pt32 pb32 centr-hdr bt1 bb1">
+        <div class="container">
+          <div class="breadcrumb">
+            <ul class="df fs16 fw5">
+              <li class="fc6">Home</li>
+              <li class="fc6">United States</li>
+              <li>3-Day Loire Mer Extraordinaire Seine</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt32 pb32 bt1 bb1">
+        <div class="container">
+          <div class="slider1 w100 deal-detail">
+            <div class="ctrl-box w100 pr">
+                        <div class="prv-btn box-centr br50 w44 prev1 h44 brd1 bg1 cp pa l0 zi2">
+                          <span class="material-symbols-outlined"> chevron_left </span>
+                        </div>
+                        <div class="nxt-btn box-centr br50 w44 h44 brd1 bg1 cp pa r0 zi2 next1">
+                          <span class="material-symbols-outlined"> chevron_right </span>
+                        </div>
+                      </div>
+          
+             <div class="deal-detail-head ofh slides df mb40 pt40 dimg">
+                          <article class="image-slider slide-card ofh br20 mr20">
+                            <div class="image-slide-items h-centr">          
+                            <div class="img-item">
+                            <img src="https://www.hlimg.com/images/deals/360X230/deals_201905311559299692-0.jpg?w=480&amp;dpr=1.0" alt="" loading="lazy" class="gm-loaded gm-observing gm-observing-cb">
+                          </div>
+            </div>
+             </article>
+          
+                         <article class="image-slider slide-card ofh br20 mr20">
+                        <div class="image-slide-items h-centr">
+          
+                          <div class="img-item">
+                            <img src="https://www.hlimg.com/images/deals/360X230/deals_201905311559299672-0.jpg?w=480&amp;dpr=1.0" alt="" loading="lazy" class="gm-loaded gm-observing gm-observing-cb">
+                          </div>
+            </div>
+             </article>
+          
+                                  </div>
+          </div>
+          <div class="flx100 tal inner-h1 pb20">
+            <h1>3-Day Loire Mer Extraordinaire Seine</h1>
+            <div class="mb20 df jcsb">
+              <div class="v-centr">
+                <div class="v-centr">
+                  <span class="material-symbols-outlined mb5"> star </span>
+                  <span class="fw6 fs18"> 5 </span>
+                  <span class="fc2 ml4"> (2 Reviews)</span>
+                </div>
+                <div class="df ml10">
+                  <div class="fs16 fc2">New York, USA</div>
+                </div>
+              </div>
+              <div class="df">
+                <div class="box-centr br50 w44 h44 brd1 bg1 cp mr4">
+                  <span class="material-symbols-outlined"> play_arrow </span>
+                </div>
+                <div class="box-centr br50 w44 h44 brd1 bg1 cp mr4">
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="box-centr br50 w44 h44 brd1 bg1 cp">
+                  <span class="material-symbols-outlined"> favorite </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-content df pr ais">
+            <div class="left-box flx1">
+              <div class="detail-service">
+                <div class="detail-service-feature df jcsb fww">
+                  <div class="df w30">
+                    <div class="box-centr br10 w44 h44 brd1 bg1 cp mr16">
+                      <span class="material-symbols-outlined fc2"
+                        >schedule</span
+                      >
+                    </div>
+                    <div class="info">
+                      <div class="fw7 fs16 lh26 fc2">Price (per person)</div>
+                      <p class="fw4 fc2 lh22 fs14">Rs 20,000</p>
+                    </div>
+                  </div>
+                  <div class="df w30">
+                    <div class="box-centr br10 w44 h44 brd1 bg1 cp mr16">
+                      <span class="material-symbols-outlined fc2"
+                        >footprint</span
+                      >
+                    </div>
+                    <div class="info">
+                      <div class="fw7 fs16 lh26 fc2">Duration</div>
+                      <p class="fw4 fc2 lh22 fs14">2 days</p>
+                    </div>
+                  </div>
+                  <div class="df w30">
+                    <div class="box-centr br10 w44 h44 brd1 bg1 cp mr16">
+                      <span class="material-symbols-outlined fc2">groups</span>
+                    </div>
+                    <div class="info">
+                      <div class="fw7 fs16 lh26 fc2">Tour Type</div>
+                      <p class="fw4 fc2 lh22 fs14">Daily Tour</p>
+                    </div>
+                  </div>
+                  <div class="df w30">
+                    <div class="box-centr br10 w44 h44 brd1 bg1 cp mr16">
+                      <span class="material-symbols-outlined fc2"
+                        >translate</span
+                      >
+                    </div>
+                    <div class="info">
+                      <div class="fw7 fs16 lh26 fc2">Meals</div>
+                      <p class="fw4 fc2 lh22 fs14">Veg, Non-veg</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-centr mt40 pt40 mb40 bt1">
+                  <div
+                    class="asl-question fs14 fw5 bg7 pl20 pr20 br1 fc3 ttu box-centr w100 mr20 h48 cp"
+                  >
+                    enquire now
+                  </div>
+                  <div
+                    class="card-enq-btn fs14 fw6 box-centr ttu fc6 cp ml20 h48"
+                  >
+                    contact agent
+                  </div>
+                </div>
+                <div class="deatil-about-us">
+                  <h2 class="fw7 fs26 lh30 mb20 fc1">About this tour</h2>
+                  <p class="fs16 lh26 fc2 mb15">
+                    The company continued to work at its regular pace. In 1972,
+                    the P250 Urraco, the 400 GT Jarama, the 400 GT Espada and
+                    the P400 Miura SV were in full production. That year, in an
+                    attempt to improve sales that were frankly quite
+                    disappointing until then, the Jarama hand a 365-hp engine
+                    and was dubbed the Jarama S
+                  </p>
+
+                  <p class="fs16 lh26 fc2 mb15">
+                    In 1972, the Urraco, which had experienced several initial
+                    slowdowns, was finally put into production. Almost
+                    inevitably, the S version also arrived in October of that
+                    year. In this case, the goal was not to enhance the car’s
+                    performance but to improve its overall quality, which had
+                    been neglected in the haste to start production.
+                  </p>
+
+                  <p class="fs16 lh26 fc2 mb15">
+                    The following year, while waiting for the Countach prototype
+                    to be developed to a stage that would enable its production,
+                    the Espada was further modified and perfected, and the new
+                    series was presented in October 1972. New wheels as well as
+                    perfected detailing of the entire body, the dashboard, the
+                    central instrument panel and various components
+                    characterised this well-made Series III. This last series
+                    essentially represented the decisive peak in the evolution
+                    of this outstanding four-seater, which is still in great
+                    demand among Lamborghini fans around the world. Its
+                    production would reach the respectable figure of 1226 units,
+                    quite a large number for a carmaker of this size selling at
+                    top-level list prices.
+                  </p>
+
+                  <p class="fs16 lh26 fc2 mb15">
+                    The production model of the Countach was codenamed LP 400
+                    because its V12 – positioned longitudinally behind the
+                    cockpit – was increased to an ideal displacement of 4 litres
+                    (3929 cc). This model debuted at the 1973 Geneva Motor Show.
+                  </p>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="detail-highlight">
+                  <h2 class="detail-heading-section fw7 fs26 lh30 mb20 fc1">
+                    Highlights
+                  </h2>
+                  <ul>
+                    <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                      <span class="material-symbols-outlined fc9 mr4">
+                        check_circle </span
+                      >Visit eight villages showcasing Polynesian culture
+                    </li>
+                    <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                      <span class="material-symbols-outlined fc9 mr4">
+                        check_circle </span
+                      >Canoe ride, tattoos, spear throwing, ukulele lessons and
+                      fishing
+                    </li>
+                    <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                      <span class="material-symbols-outlined fc9 mr4">
+                        check_circle </span
+                      >Spectacular Polynesian evening dinner show ‘Ha: Breath of
+                      Life’
+                    </li>
+                    <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                      <span class="material-symbols-outlined fc9 mr4">
+                        check_circle </span
+                      >Optional transportation from Waikiki hotels
+                    </li>
+                  </ul>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="deail-inexclude">
+                  <h2 class="deatil-head fw7 fs26 lh30 mb20 fc1">
+                    Included/Excluded
+                  </h2>
+                  <div class="df">
+                    <div class="pr15">
+                      <ul class="include">
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Breakfast + Dinner
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Flights
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Accommodation
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Pick-up
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Drop
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc9 mr4"
+                            >check_circle</span
+                          >Sightseeing
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pl15">
+                      <ul class="exclude">
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc10 mr4"
+                            >cancel</span
+                          >Additional Services
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc10 mr4"
+                            >cancel</span
+                          >Insurance
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc10 mr4"
+                            >cancel</span
+                          >Drink
+                        </li>
+                        <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                          <span class="material-symbols-outlined fc10 mr4"
+                            >cancel</span
+                          >Tickets
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="deatil-itinerary mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1">
+                    Itinerary
+                  </h2>
+                  <div class="iternary-accordion-list">
+                    <div class="mb15 cp br10 bg1 df b1 df fdc accordion brd1">
+                      <div class="df p20 accordion-header aic jcsb">
+                        <span
+                          class="fw7 fs16 lh26 mr16 brd1 pt10 pb10 pl20 pr20 br10 bg1 fc6"
+                          >Day 1</span
+                        >
+                        <p class="fw5 fs18 lh26 fc1 flx1">Delhi– Manali</p>
+                        <span class="accordion-icon fs28 fw4 fc6">+</span>
+                      </div>
+                      <div class="p20 accordion-content" style="display: none">
+                        <p class="fc2 lh26">
+                          Take Volvo bus from Delhi boarding point, Delhi to
+                          Manali about 05:00 pm, overnight journey, arrive
+                          Manali about 8:00 am, transfer to hotel.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mb15 cp br10 bg1 df b1 df fdc accordion brd1">
+                      <div class="df p20 accordion-header aic jcsb">
+                        <span
+                          class="fw7 fs16 lh26 mr16 brd1 pt10 pb10 pl20 pr20 br10 bg1 fc6"
+                          >Day 2</span
+                        >
+                        <p class="fw5 fs18 lh26 fc1 flx1">
+                          Manali Local Sightseeing
+                        </p>
+                        <span class="accordion-icon fs28 fw4 fc6">+</span>
+                      </div>
+                      <div class="p20 accordion-content" style="display: none">
+                        <p class="fc2 lh26">
+                          Morning reach at manali, check in hotel as per the
+                          hotel policy. Afternoon go for half day sightseeing of
+                          Manali Local. Visit Places Like: ü Hadimba Devi Temple
+                          at Doongri ü Van Vihar & Club House , Tibetan
+                          Monastery , Explore the Mall and Hong Kong Market ,
+                          Evening Back to hotel. Dinner & Overnight at stay
+                          hotel.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accomodation mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1 mb20">
+                    Accommodation
+                  </h2>
+                  <div class="ofa table-content">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <th class="p20 bg6">Place</th>
+                          <th class="p20 bg6">Hotel</th>
+                          <th class="p20 bg6">Star</th>
+                          <th class="p20 bg6">Days</th>
+                        </tr>
+                        <tr>
+                          <td class="p20">Delhi to Manali</td>
+                          <td class="p20">Overnight Journey by Volvo Bus</td>
+                          <td class="p20" align="center">
+                            <span
+                              class="fw7 bg9 pt10 pb10 pl15 pr15 fc3 br10 dif aic"
+                              >3&nbsp;<span class="material-symbols-outlined"
+                                >star</span
+                              ></span
+                            >
+                          </td>
+                          <td class="p20">Day&nbsp;1</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">
+                            <a
+                              style="text-decoration: none"
+                              href=""
+                              target="_blank"
+                              >Manali</a
+                            >
+                          </td>
+                          <td class="p20">Overnight Journey by Volvo Bus</td>
+                          <td class="p20" align="center">
+                            <span
+                              class="fw7 bg9 pt10 pb10 pl15 pr15 fc3 br10 dif aic"
+                              >3&nbsp;<span class="material-symbols-outlined"
+                                >star</span
+                              ></span
+                            >
+                          </td>
+                          <td class="p20">Day&nbsp;2</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">
+                            <a
+                              style="text-decoration: none"
+                              href=""
+                              target="_blank"
+                              >Manali</a
+                            >
+                          </td>
+                          <td class="p20">Overnight Journey by Volvo Bus</td>
+                          <td class="p20" align="center">
+                            <span
+                              class="fw7 bg9 pt10 pb10 pl15 pr15 fc3 br10 dif aic"
+                              >3&nbsp;<span class="material-symbols-outlined"
+                                >star</span
+                              >
+                            </span>
+                          </td>
+                          <td class="p20">Day&nbsp;3</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">
+                            <a
+                              style="text-decoration: none"
+                              href=""
+                              target="_blank"
+                              >Manali</a
+                            >
+                          </td>
+                          <td class="p20">Overnight Journey by Volvo Bus</td>
+                          <td class="p20" align="center">
+                            <span
+                              class="fw7 bg9 pt10 pb10 pl15 pr15 fc3 br10 dif aic"
+                              >3&nbsp;<span class="material-symbols-outlined"
+                                >star</span
+                              ></span
+                            >
+                          </td>
+                          <td class="p20">Day&nbsp;4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="price-breakup mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1 mb20">
+                    Price Breakup
+                  </h2>
+                  <div class="">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <th class="p20 bg6">Components</th>
+                          <th class="p20 bg6">
+                            price per pax on twin sharing (₹)
+                          </th>
+                          <th class="p20 bg6">
+                            price per 2 pax on twin sharing (₹)
+                          </th>
+                        </tr>
+                        <tr>
+                          <td class="p20">Transport</td>
+                          <td class="p20">5500</td>
+                          <td class="p20">11000</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">Activities</td>
+                          <td class="p20">2000</td>
+                          <td class="p20">4000</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">Miscellaneous</td>
+                          <td class="p20">12000</td>
+                          <td class="p20">24000</td>
+                        </tr>
+                        <tr>
+                          <td class="p20">Total Cost(incl. tax)</td>
+                          <td class="p20">19500</td>
+                          <td class="p20">39000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="mt20 mb15">
+                      Miscellaneous includes: Train ticket, Boating ticket,
+                      Parking
+                    </p>
+                    <ul class="include">
+                      <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                        <span class="material-symbols-outlined fs12 mr8">
+                          emergency
+                        </span>
+                        transport cost may vary depending upon the no. of
+                        persons.
+                      </li>
+                      <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                        <span class="material-symbols-outlined fs12 mr8">
+                          emergency </span
+                        >Mentioned prices may vary depending upon date of
+                        travel, hotel availability, surge pricing and seasonal
+                        rush.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="">
+                    <h2 class="head-itinerary fw7 fs26 lh30 mt40 fc1 mb20">
+                      Terms and Conditions
+                    </h2>
+                    <ul class="include">
+                      <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                        <span class="material-symbols-outlined fs16 mr8">
+                          keyboard_double_arrow_right
+                        </span>
+                        Payment Terms & Methods: 50 % in advance
+                      </li>
+                      <li class="v-centr fw4 fs16 fc2 mb15 lh26">
+                        <span class="material-symbols-outlined fs16 mr8">
+                          keyboard_double_arrow_right </span
+                        >Cancellation & Refund Policy: 100 % refund before 4
+                        days
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="deatil-duration mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1 mb20">
+                    Durations
+                  </h2>
+                  <div class="v-centr">
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1 mr40">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >0 - 3 hours
+                    </div>
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1 mr40">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >3 - 5 hours
+                    </div>
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >5 - 7 hours
+                    </div>
+                  </div>
+                </div>
+                <div class="deatil-languages mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1 mb20">
+                    Languages
+                  </h2>
+                  <div class="df">
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1 mr40">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >Espanol
+                    </div>
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >Francais
+                    </div>
+                  </div>
+                </div>
+                <div class="v-centr mt40 pt40 mb40 bt1">
+                  <div
+                    class="asl-question fs14 fw5 bg7 pl20 pr20 br1 fc3 ttu box-centr w100 mr20 h48 cp"
+                  >
+                    enquire now
+                  </div>
+                  <div
+                    class="card-enq-btn fs14 fw6 box-centr ttu fc6 cp ml20 h48"
+                  >
+                    contact agent
+                  </div>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="deatil-faq mt40 mb">
+                  <h2 class="head-faq fw7 fs26 lh30 mb20 fc1">
+                    Frequently asked questions
+                  </h2>
+                  <div class="faq-accordion-list">
+                    <div class="mb15 cp br10 bg1 df b1 df fdc accordion brd1">
+                      <div class="df p20 accordion-header aic">
+                        <span class="material-symbols-outlined mr16">
+                          live_help
+                        </span>
+                        <p class="fw5 fs18 lh26 fc1 flx1">
+                          Do you arrange airport transfers?
+                        </p>
+                        <span class="accordion-icon fs28 fw4 fc6">+</span>
+                      </div>
+                      <div class="p20 accordion-content" style="display: none">
+                        <p class="fc2 lh26">
+                          Airport transfers are not included in the price of
+                          this tour, however you can book for an arrival
+                          transfer in advance. In this case a tour operator
+                          representative will be at the airport to greet you. To
+                          arrange this please contact our customer service team
+                          once you have a confirmed booking.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mb15 cp br10 bg1 df b1 df fdc accordion brd1">
+                      <div class="df p20 accordion-header aic">
+                        <span class="material-symbols-outlined mr16">
+                          live_help
+                        </span>
+                        <p class="fw5 fs18 lh26 fc1 flx1">
+                          Do you arrange airport transfers?
+                        </p>
+                        <span class="accordion-icon fs28 fw4 fc6">+</span>
+                      </div>
+                      <div class="p20 accordion-content" style="display: none">
+                        <p class="fc2 lh26">
+                          Airport transfers are not included in the price of
+                          this tour, however you can book for an arrival
+                          transfer in advance. In this case a tour operator
+                          representative will be at the airport to greet you. To
+                          arrange this please contact our customer service team
+                          once you have a confirmed booking.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h1 w100 bg8 mt40 mb40"></div>
+                <div class="deatil-tour-location mt40 mb">
+                  <div class="deatil-tour-location-heading v-centr jcsb">
+                    <div class="fw7 fs26 lh30 mb20 fc1 tac">
+                      Tour's Location
+                    </div>
+                    <div class="fw4 fs16 fc2 v-centr">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      New York, USA
+                    </div>
+                  </div>
+                  <div class="df">
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1 mr40">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >Espanol
+                    </div>
+                    <div class="v-centr fw4 fs16 lh26 pb20 fc1">
+                      <span class="material-symbols-outlined mr16"
+                        >timelapse</span
+                      >Francais
+                    </div>
+                  </div>
+                </div>
+                <div class="deatil-tour-reviews mt40 mb">
+                  <h2 class="head-itinerary fw7 fs26 lh30 mb20 fc1 mb20">
+                    Reviews
+                  </h2>
+                  <div class="br10 brd1 bg6 p20 df aisc jcc">
+                    <div class="overall-review-show br1 pr20 h-centr fdc">
+                      <div class="v-centr pb10">
+                        <span class="material-symbols-outlined lh22 mr4">
+                          star
+                        </span>
+                        <div class="fs28 fc6">5/5</div>
+                      </div>
+                      <div class="fs22 fw7 pb10">Excellent</div>
+                      <div class="fw4 fc2 lh26 fs16">(2 reviews)</div>
+                    </div>
+                    <div class="review-list-show pl20 pt20 pb20">
+                      <div class="v-centr pb10">
+                        <div class="fw4 fs16 fc1 lh26 mw80">Excellent</div>
+                        <div class="w100 h4 br10 bg9 ml20 mr16"></div>
+                        <div class="fw5 fs16 lh26">2</div>
+                      </div>
+                      <div class="v-centr pb10">
+                        <div class="fw4 fs16 fc1 lh26 mw80">Very Good</div>
+                        <div class="w100 h4 br10 bg8 ml20 mr16"></div>
+                        <div class="fw5 fs16 lh26">0</div>
+                      </div>
+                      <div class="v-centr pb10">
+                        <div class="fw4 fs16 fc1 lh26 mw80">Average</div>
+                        <div class="w100 h4 br10 bg8 ml20 mr16"></div>
+                        <div class="fw5 fs16 lh26">0</div>
+                      </div>
+                      <div class="v-centr pb10">
+                        <div class="fw4 fs16 fc1 lh26 mw80">Poor</div>
+                        <div class="w100 h4 br10 bg8 ml20 mr16"></div>
+                        <div class="fw5 fs16 lh26">0</div>
+                      </div>
+                      <div class="v-centr pb10">
+                        <div class="fw4 fs16 fc1 lh26 mw80">Terrible</div>
+                        <div class="w100 h4 br10 bg8 ml20 mr16"></div>
+                        <div class="fw5 fs16 lh26">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-centr mt40 fs14 fc2 mb30">
+                    2 reviews on this Tour - Showing 1 to 2
+                  </div>
+                  <div class="comment-list">
+                    <div class="comment pb32 pt32 fs14 bt1">
+                      <div class="comment-head df jcsb aic mb15">
+                        <div class="comment-user v-centr">
+                          <div class="w44 h44 br50 brd1"></div>
+                          <div class="commenter-name-date pl15">
+                            <div class="commenter-name fw5 fc1 lh26 fs16">
+                              Customer
+                            </div>
+                            <div class="commenter-date fw4 fs14 lh22 tac fc2">
+                              05/27/2022
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment-like v-centr fw4 fs16 lh26 fc2">
+                          <span class="material-symbols-outlined mr4 fc6"
+                            >thumb_up</span
+                          >2
+                        </div>
+                      </div>
+                      <div class="comment-start mb15">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                      <div class="comment-title fw7 fs18 fc1 lh26 mb15">
+                        Fantastic Trip
+                      </div>
+                      <div
+                        class="comment-detail fw4 fs16 lh26 fc2 text-row lc3"
+                      >
+                        I am a little late in posting a review. We returned from
+                        this trip in early March, right when everything started
+                        to close down due to Covid-19. I can tell you that the
+                        memories of this trip have kept me going while
+                        sheltering in place. If you are thinking this might be
+                        the tripI am a little late in posting a review. We
+                        returned from this trip in early March, right when
+                        everything started to close down due to Covid-19. I can
+                        tell you that the memories of this trip have kept me
+                        going while sheltering in place. If you are thinking
+                        this might be the tripI am a little late in posting a
+                        review. We returned from this trip in early March, right
+                        when everything started to close down due to Covid-19. I
+                        can tell you that the memories of this trip have kept me
+                        going while sheltering in place. If you are thinking
+                        this might be the tripI am a little late in posting a
+                        review. We returned from this trip in early March, right
+                        when everything started to close down due to Covid-19. I
+                        can tell you that the memories of this trip have kept me
+                        going while sheltering in place. If you are thinking
+                        this might be the trip
+                      </div>
+                    </div>
+
+                    <div class="comment pb32 pt32 fs14 bt1">
+                      <div class="comment-head df jcsb aic mb15">
+                        <div class="comment-user v-centr">
+                          <div class="w44 h44 br50 brd1"></div>
+                          <div class="commenter-name-date pl15">
+                            <div class="commenter-name fw5 fc1 lh26 fs16">
+                              Customer
+                            </div>
+                            <div class="commenter-date fw4 fs14 lh22 tac fc2">
+                              05/27/2022
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment-like v-centr fw4 fs16 lh26 fc2">
+                          <span class="material-symbols-outlined mr4 fc6"
+                            >thumb_up</span
+                          >2
+                        </div>
+                      </div>
+                      <div class="comment-start mb15">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                      <div class="comment-title fw7 fs18 fc1 lh26 mb15">
+                        Fantastic Trip
+                      </div>
+                      <div
+                        class="comment-detail fw4 fs16 lh26 fc2 text-row lc3"
+                      >
+                        I am a little late in posting a review. We returned from
+                        this trip in early March, right when everything started
+                        to close down due to Covid-19. I can tell you that the
+                        memories of this trip have kept me going while
+                        sheltering in place. If you are thinking this might be
+                        the trip
+                      </div>
+                    </div>
+                    <div class="v-centr jcsb">
+                      <a href="review.html"
+                        ><button
+                          class="write-review box-centr lh26 fc2 brd1 br10 bg7 fc3 cp fs16 fw8 h48 pl20 pr20"
+                        >
+                          <span class="material-symbols-outlined mr8">
+                            edit </span
+                          >Write a Review
+                        </button></a
+                      >
+
+                      <a href="review.html"
+                        ><button
+                          class="write-review box-centr lh26 fc6 brd2 br10 bg1 fc3 cp fs16 fw8 h48 pl20 pr20"
+                        >
+                          View More
+                          <span class="material-symbols-outlined ml10">
+                            keyboard_double_arrow_right
+                          </span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-box flx33 pl15 ps t72">
+              <div class="owner-info bg1 p20 brd1 br10 mb30 bs1">
+                <h4 class="fw7 fs26 lh30 fc1 mb5 tac pt20">Tour Package by</h4>
+                <div class="owner-name v-centr fdc mt20">
+                  <div
+                    class="owener-image box-centr ofh br50 bg1 w44 h44 brd1 mt20"
+                  >
+                    <img
+                      class="br50"
+                      src="images/tourplaces/california-400x400.jpg"
+                      alt="modtour package"
+                    />
+                  </div>
+                  <h4 class="owener-heading fw5 fs16 lh26 fc1 mt10">modtour</h4>
+                  <p class="owner-member-since fw4 fs16 lh26 tac mt6 pb10">
+                    Member Since 2022
+                  </p>
+                </div>
+                <div class="contact-details pb10">
+                  <div class="v-centr jcsb mt20 pt32 bt1 mb20">
+                    <div class="pb20">
+                      <h5 class="fw5 fs16 lh26 fc1">Trips</h5>
+                      <p class="fw4 fs16 lh26 fc2">36</p>
+                    </div>
+                    <div class="pb20">
+                      <h5 class="fw5 fs16 lh26 fc1 v-centr">
+                        3<span class="material-symbols-outlined">star</span>
+                      </h5>
+                      <p class="fw4 fs16 lh26 fc2">20 Ratings</p>
+                    </div>
+                    <div class="pb20">
+                      <h5 class="fw5 fs16 lh26 fc1">139</h5>
+                      <p class="fw4 fs16 lh26 fc2">Months</p>
+                    </div>
+                  </div>
+                  <div
+                    class="asl-question fs14 fw5 bg7 pl20 pr20 pt20 pb20 br10 fc3 ttu box-centr w100"
+                  >
+                    enquire now
+                  </div>
+                  <div class="card-enq-btn fs14 fw6 box-centr ttu fc6 cp mt20">
+                    contact agent
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ptb80">
+        <div class="container">
+          <h1>Explore other options</h1>
+          <div class="slide-ctrl v-centr jce">
+            <div class="prv-btn box-centr br50 w44 h44 brd1 bg1 cp">
+              <span class="material-symbols-outlined"> chevron_left </span>
+            </div>
+            <div class="nxt-btn box-centr br50 w44 h44 brd1 bg1 cp">
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </div>
+          </div>
+          <div class="cards-container pr df ofh m12-add">
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/aerial-photography-of-passing-vehicles-on-highway-leading-to-city-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/HD-photo-by-Bailey-Alexander-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/90375_5bd5787b-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/aerial-photography-of-passing-vehicles-on-highway-leading-to-city-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/aerial-photography-of-passing-vehicles-on-highway-leading-to-city-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+
+            <article class="card ofh df fdc jcsb">
+              <div class="card-top pr">
+                <div class="featured pa zi2 fs14 fc3 fw7">Featured</div>
+                <div class="card-img df pr">
+                  <a href="#" class="wishlist pa zi2 fs28">
+                    <span class="material-symbols-outlined fc3 cp">
+                      favorite
+                    </span>
+                  </a>
+                  <a href="#" class="w100 box-centr ofh">
+                    <img
+                      class="lazy"
+                      src="images/trip/HD-photo-by-Bailey-Alexander-450x300.jpg"
+                      alt="3-Day Loire Mer Extraordinaire Seine"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="service-avatar br50 box-centr ofh mla"
+                    ><img
+                      class="lazy"
+                      decoding="async"
+                      alt="avatar"
+                      width="70"
+                      height="70"
+                      src="images/32.jpg"
+                      class="avatar br50"
+                  /></a>
+                </div>
+                <div class="address v-centr pl20 pr20 pt20 fs14 fc2 lh22">
+                  <span class="material-symbols-outlined fch16">
+                    location_on </span
+                  >New York, USA
+                </div>
+                <h2 class="mt6 mb15 pl20 pr20">
+                  <a href="#" class="fc-h1"
+                    >3-Day Loire Mer Extraordinaire Seine</a
+                  >
+                </h2>
+                <div class="review-box v-centr pl20 pr20 mb20 lh22">
+                  <span class="material-symbols-outlined mr8 fch16">
+                    star
+                  </span>
+                  <span class="rating mr4 fw7">5</span>
+                  <span class="review-count fc2 fs14">(3 Review)</span>
+                </div>
+              </div>
+              <div class="card-bottom bt1 pt20 ml20 mr20 pb20 df jcsb aie">
+                <div class="price-range v-centr fc1 fw7 pr">
+                  <span class="fs14 fc2 mr8 fw4">From</span>$225,00
+                </div>
+                <div class="duration v-centr fc2 fs14">
+                  <span class="material-symbols-outlined mr4"> schedule </span>2
+                  Days
+                </div>
+              </div>
+            </article>
+          </div>
+          <div
+            class="write-review db lh26 fc2 brd1 p20 br20 fc6 cp fs18 fw7 v-centr jcc"
+          >
+            View More
+          </div>
+        </div>
+      </section>
+
+      <!-- Offer Enquiry Form -->
+      <section class="offer-section">
+        <div class="container br20 ofh v-centr jcsb pr brd1">
+          <div class="left-img pa t0 b0"></div>
+          <div class="right-form mla tac">
+            <h1>Get special offers, and more from Traveler</h1>
+            <p class="sub-text fc2 lh26 mb30">
+              Subscribe to see secret deals prices drop the moment you sign up!
+            </p>
+            <form class="offer-form mb30" method="post">
+              <div class="offer-inputs v-centr">
+                <input
+                  type="email"
+                  name="EMAIL"
+                  class="offer-input"
+                  placeholder="Email Address"
+                />
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Subscribe"
+                  class="offer-submit-btn fc3"
+                />
+              </div>
+
+              <label style="display: none !important"
+                >Leave this field empty if you're human:
+                <input
+                  type="text"
+                  name="_mc4wp_honeypot"
+                  value=""
+                  tabindex="-1"
+                  autocomplete="off" /></label
+              ><input
+                type="hidden"
+                name="_mc4wp_timestamp"
+                value="1682628396"
+              /><input type="hidden" name="_mc4wp_form_id" value="209" /><input
+                type="hidden"
+                name="_mc4wp_form_element_id"
+                value="mc4wp-form-1"
+              />
+              <div class="mc4wp-response"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt40 pb40 bt1">
+        <div class="footer-counts df jcse aic">
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">15,000+</h2>
+            <span class="fs14">TRAVEL AGENTS</span>
+          </div>
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">2,000,000+</h2>
+            <span class="fs14">AMAZING DEALS</span>
+          </div>
+          <div class="agent-cont fc1 fw7 tac">
+            <h2 class="mb8">50 Lacs+</h2>
+            <span class="fs14">HAPPY TRAVELERS</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bt1">
+      <!-- Footer content, such as copyright information, contact details, etc. -->
+      <div class="container">
+        <div class="footer-navbar w100 df jcsb fww pb40">
+          <div class="footer-navlist flx1">
+            <h3>About Hello Travel</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Help us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>For Travelers</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Add a review</a></li>
+              <li><a href="#">Plan your trip</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Trip Ideas Policy</a></li>
+              <li><a href="#">Weekend Gateways</a></li>
+              <li><a href="#">Events around the world</a></li>
+              <li><a href="#">Travel Calculator</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>For Travel Agents</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Agents login</a></li>
+              <li><a href="#">Register with us</a></li>
+              <li><a href="#">Learning Center</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-navlist flx1">
+            <h3>Trusted Partner</h3>
+            <!-- Navbar list -->
+            <ul>
+              <!-- Navbar list items -->
+              <li><a href="#">Safe and Secure</a></li>
+              <li><a href="#">Trusted and Reliable</a></li>
+              <li><a href="#">Quick Payment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright bg5">
+      <div class="container">
+        <div class="copyright-box v-centr jcsb pt20 pb20">
+          <span class="copy"> © Copyright Traveler 2022 </span>
+          <!-- Navbar list -->
+          <ul class="social-media v-centr">
+            <!-- Navbar list items -->
+            <li>
+              <a class="df" href="#" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#3D52A6"></rect>
+                  <path
+                    d="M21.0417 17.3959V15.3126C21.0417 14.7376 21.5084 14.2709 22.0834 14.2709H23.125V11.6667H21.0417C19.3157 11.6667 17.9167 13.0657 17.9167 14.7917V17.3959H15.8334V20.0001H17.9167V28.3334H21.0417V20.0001H23.125L24.1667 17.3959H21.0417Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#58B1F7"></rect>
+                  <path
+                    d="M28.5878 14.6732C27.9489 14.9534 27.2682 15.1392 26.5585 15.2294C27.2886 14.7935 27.8459 14.1084 28.1079 13.2827C27.4271 13.6886 26.6755 13.9753 25.8745 14.1353C25.2281 13.447 24.3069 13.0208 23.3019 13.0208C21.352 13.0208 19.7823 14.6034 19.7823 16.5436C19.7823 16.8228 19.8059 17.0912 19.8639 17.3468C16.9358 17.204 14.3449 15.8006 12.6044 13.6628C12.3006 14.19 12.1223 14.7935 12.1223 15.4431C12.1223 16.6628 12.7505 17.744 13.6868 18.37C13.1209 18.3593 12.5658 18.195 12.0955 17.9362C12.0955 17.947 12.0955 17.9609 12.0955 17.9749C12.0955 19.6864 13.3163 21.108 14.9172 21.4355C14.6306 21.5139 14.3181 21.5514 13.9938 21.5514C13.7684 21.5514 13.5407 21.5386 13.3271 21.4913C13.7834 22.8861 15.0783 23.9115 16.618 23.9448C15.4197 24.8821 13.8983 25.4469 12.2512 25.4469C11.9624 25.4469 11.6853 25.434 11.4083 25.3986C12.9684 26.4046 14.8174 26.9791 16.8113 26.9791C23.2922 26.9791 26.8355 21.6105 26.8355 16.957C26.8355 16.8013 26.8301 16.651 26.8226 16.5017C27.5216 16.0057 28.1089 15.3862 28.5878 14.6732Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#D9498C"></rect>
+                  <path
+                    d="M23.125 11.6667H16.875C13.9989 11.6667 11.6666 13.999 11.6666 16.8751V23.1251C11.6666 26.0011 13.9989 28.3334 16.875 28.3334H23.125C26.001 28.3334 28.3333 26.0011 28.3333 23.1251V16.8751C28.3333 13.999 26.001 11.6667 23.125 11.6667ZM26.7708 23.1251C26.7708 25.1355 25.1354 26.7709 23.125 26.7709H16.875C14.8645 26.7709 13.2291 25.1355 13.2291 23.1251V16.8751C13.2291 14.8647 14.8645 13.2292 16.875 13.2292H23.125C25.1354 13.2292 26.7708 14.8647 26.7708 16.8751V23.1251Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M20 15.8334C17.6989 15.8334 15.8333 17.699 15.8333 20.0001C15.8333 22.3011 17.6989 24.1667 20 24.1667C22.301 24.1667 24.1666 22.3011 24.1666 20.0001C24.1666 17.699 22.301 15.8334 20 15.8334ZM20 22.6042C18.5645 22.6042 17.3958 21.4355 17.3958 20.0001C17.3958 18.5636 18.5645 17.3959 20 17.3959C21.4354 17.3959 22.6041 18.5636 22.6041 20.0001C22.6041 21.4355 21.4354 22.6042 20 22.6042Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M24.4792 16.0761C24.7858 16.0761 25.0344 15.8275 25.0344 15.5209C25.0344 15.2143 24.7858 14.9657 24.4792 14.9657C24.1725 14.9657 23.924 15.2143 23.924 15.5209C23.924 15.8275 24.1725 16.0761 24.4792 16.0761Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="df" href="#" target="_blank">
+                <span class="elementor-screen-only"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="#F62D3A"></rect>
+                  <path
+                    d="M28.3875 14.9545C27.8902 14.0773 27.3506 13.9159 26.2517 13.8545C25.154 13.7807 22.3937 13.75 20.0023 13.75C17.6064 13.75 14.8449 13.7807 13.7484 13.8534C12.6518 13.9159 12.111 14.0761 11.6091 14.9545C11.0969 15.8307 10.8334 17.3398 10.8334 19.9966C10.8334 19.9989 10.8334 20 10.8334 20C10.8334 20.0023 10.8334 20.0034 10.8334 20.0034V20.0057C10.8334 22.6511 11.0969 24.1716 11.6091 25.0386C12.111 25.9159 12.6507 26.075 13.7472 26.1489C14.8449 26.2125 17.6064 26.25 20.0023 26.25C22.3937 26.25 25.154 26.2125 26.2529 26.15C27.3517 26.0761 27.8914 25.917 28.3887 25.0398C28.9055 24.1727 29.1667 22.6523 29.1667 20.0068C29.1667 20.0068 29.1667 20.0034 29.1667 20.0011V19.9977C29.1667 17.3398 28.9055 15.8307 28.3875 14.9545ZM17.7084 23.4091V16.5909L23.4375 20L17.7084 23.4091Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-login-form" id="modal-login-form">
+      <div class="modal-login-form-content">
+        <div class="form-sign-in-up">
+          <span class="material-symbols-outlined close-icon">close</span>
+          <ul class="account-tabs">
+            <li class="tab-item active" onclick="showSignInForm()">Sign in</li>
+            <li class="tab-item" onclick="showSignUpForm()">Sign up</li>
+          </ul>
+        </div>
+        <form class="sign-in-form">
+          <div class="df fdc sign-in" id="sign-in">
+            <h2>Sign in to your account</h2>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email or Username"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log In</button>
+            <div class="df jcsb mt40 remeber-container">
+              <div class="v-centr">
+                <label for="remember-me">
+                  <input type="checkbox" name="remember" />
+                  Remember me
+                </label>
+              </div>
+              <a href="#">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="df fdc sign-up" id="sign-up">
+            <h2>Create an account</h2>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="text"
+              id="username"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <div class="df mb20 mt6">
+              <label class="" for="normal-user">
+                <input
+                  checked=""
+                  id="normal-user"
+                  type="radio"
+                  class="mr5"
+                  name="register_as"
+                  value="normal"
+                />
+                <span class="ml4">Normal User</span>
+              </label>
+              <label class="ml20" for="partner-user">
+                <input
+                  id="partner-user"
+                  type="radio"
+                  class="mr5"
+                  name="register_as"
+                  value="partner"
+                />
+                <span class="ml4">Partner User</span>
+              </label>
+            </div>
+
+            <button type="submit">Register</button>
+            <div class="df jcsb mt40 remeber-container">
+              <div class="v-centr">
+                <label for="remember-me">
+                  <input type="checkbox" name="remember" />
+                  I confirm that I have read and accepted the privacy policy
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="social-buttons">
+          <p class="pr signin-with"><span>or sign in with</span></p>
+
+          <button class="facebook v-centr">
+            <img class="lazy" src="images/facebook.png" /><span
+              class="button-text"
+              >Sign in with Facebook</span
+            >
+          </button>
+          <button class="google v-centr">
+            <img class="lazy" src="images/google.png" /><span
+              class="button-text"
+              >Sign in with Google</span
+            >
+          </button>
+          <button class="yahoo v-centr">
+            <img class="lazy" src="images/twitter.png" /><span
+              class="button-text"
+              >Sign in with Twitter</span
+            >
+          </button>
+        </div>
+        <div class="create-account-action" onclick="showSignUpForm()">
+          <a href="#" class="create-acc">Create an account</a>
+        </div>
+      </div>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script type="text/javascript">
+      const from = [
+        "Andman",
+        "Daman",
+        "Delhi",
+        "Dehradun",
+        "Shimla",
+        "Manali",
+        "Nainital",
+        "Mumbai",
+        "Chennai",
+        "Kolkata",
+        "Bangalore",
+        "Banaras",
+        "Hyderabad",
+        "Haryana",
+        "Kashmir",
+        "Kanpur",
+      ];
+      const to = [
+        "Andhra Pradesh",
+        "Arunachal Pradesh",
+        "Assam",
+        "Bihar",
+        "Chhattisgarh",
+        "Goa",
+        "Gujarat",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jharkhand",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Odisha",
+        "Punjab",
+        "Rajasthan",
+        "Sikkim",
+        "Tamil Nadu",
+        "Telangana",
+        "Tripura",
+        "Uttar Pradesh",
+        "Uttarakhand",
+        "West Bengal",
+      ];
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const mainMenu = document.getElementById("main-menu");
+      const overlayBg = document.getElementById("overlay-bg");
+      const backButton = document.querySelector(".nav-back");
+      const backIcon = document.querySelector(".nav-back-icon");
+      const listLevel2 = document.querySelectorAll(".list-level2");
+      const expandListToggle = document.querySelectorAll(".expand-list");
+      const body = document.body;
+      menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        mainMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+        overlayBg.classList.toggle("on");
+      });
+
+      listLevel2.forEach(function (listLevel) {
+        listLevel.addEventListener("click", function (event) {
+          listLevel2.forEach(function (removeExpnd) {
+            removeExpnd.classList.remove("expnd");
+          });
+          if (event.target.tagName === "SPAN") {
+            this.classList.toggle("expnd");
+          }
+          event.stopPropagation();
+        });
+      });
+      document.addEventListener("click", function (event) {
+        if (
+          (!mainMenu.contains(event.target) && event.target !== menuToggle) ||
+          event.target == backButton ||
+          event.target == backIcon
+        ) {
+          mainMenu.classList.remove("show");
+          body.classList.remove("no-scroll");
+          overlayBg.classList.remove("on");
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        var fnavbar = document.getElementById("fixed-navbar");
+        if (window.pageYOffset > 0) {
+          fnavbar.style.display = "block";
+        } else {
+          fnavbar.style.display = "none";
+        }
+      });
+
+      var navbarItems = document.querySelectorAll(".fixed-navbar a");
+      navbarItems.forEach(function (item) {
+        item.addEventListener("click", function (event) {
+          event.preventDefault();
+          var targetSection = document.querySelector(this.getAttribute("href"));
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript" src="slide.js"></script>
+  </body>
+</html>
