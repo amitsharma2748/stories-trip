@@ -671,6 +671,9 @@ main.inside-page section,
   border: 1px solid #294da2;
   /*border: 1px solid #a70a41;*/
 }
+.brd3{
+  border:1px solid #ddd;
+}
  
 
 /* sticky-btn */
@@ -749,6 +752,7 @@ nav.nav-conatiner ul li a {
 .bs1 {
   box-shadow: 0 0 3px rgba(67, 9, 42, 0.4);
 }
+
 .text-row {
   display: -webkit-box;
   -webkit-box-orient: vertical;
