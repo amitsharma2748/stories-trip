@@ -408,7 +408,9 @@ main.inside-page section,
 .fs14 {
   font-size: 14px;
 }
-
+.fs16 {
+  font-size: 16px;
+}
 .fs18 {
   font-size: 18px;
 }
@@ -717,16 +719,27 @@ nav.nav-conatiner ul li a {
 .w100 {
   width: 100%;
 }
+.w60{
+  width: 60%;
+}
 
 .w44 {
   width: 44px;
 }
-
+.w40{
+  width: 40%;
+}
+.w10{
+  width: 10%;
+}
 .h44 {
   height: 44px;
 }
 .h48 {
   height: 48px;
+}
+.h150{
+  height: 150px;
 }
 
 .br1 {
@@ -2401,6 +2414,9 @@ td {
 }
 
 
+
+
+
 @media screen and (max-width : 1440px){
   .slide-item,
 .slide-item > a,
@@ -3149,6 +3165,49 @@ table .card-enq-btn{
   font-size: 12px;text-align: center;
 }
 }
-
+/* Amit Custom css// */
+.button-group{
+  display: flex;
+  width: 100%;
+  
+}
+.black-button-hover button{
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  color: #333;
+  padding: 5px 0;
+}
+.black-button-hover :hover{
+  background-color: #444;
+  color: #fff;
+}
+.country-wise-table ul li{
+  list-style: none;
+}
+.country-wise-table ul li::before{
+  content: "\00BB";
+  padding: 5px;
+}
+.txt-ellip{
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 414px){
+  section :not(.inner-h1) h1, section :not(.inner-h1) .hgrp h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .left-box{
+    width:70%
+  }
+  .social-media-cred{
+    flex-direction: column;
+    
+  }
+}
 Use ChatGPT to edit or generate...
 EzMail.AI
